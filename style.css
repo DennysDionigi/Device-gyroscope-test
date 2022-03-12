@@ -57,12 +57,13 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 80%;
+  top: 90%;
 }
 
 .share_me {
   text-decoration: none;
   font-family: sans-serif;
+  font-size:10vmax;
 }
 
 @media (pointer: fine) {
