@@ -4,7 +4,7 @@ let vx = 0.0; // Velocità x & y
 let vy = 0.0;
 let updateRate = 1 / 60; // Frequenza di aggiornamento del sensore
 
-async function getAccel() {
+function getAccel() {
   DeviceMotionEvent.requestPermission().then((response) => {
     if (response == "granted") {
       // Aggiungi un listener per ottenere l'orientamento dello smartphone
@@ -43,4 +43,4 @@ async function getAccel() {
 /*evento al click*/
 let btn = document.querySelector("#accelPermsButton");
 
-btn.addEventListener("click", getAccel());
+btn.addEventListener("click", getAccel );
