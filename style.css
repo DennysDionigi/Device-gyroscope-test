@@ -49,3 +49,24 @@
   top: 50%;
   left: 50%;
 }
+
+/*sharer*/
+.share_only_mobile {
+  place-content: center center;
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 80%;
+}
+
+.share_me {
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+@media (pointer: fine) {
+  .share_only_mobile {
+    display: none;
+  }
+}
