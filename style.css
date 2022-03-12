@@ -6,6 +6,8 @@
     center center/cover no-repeat fixed;
 }
 
+body{width:100%;height:auto;overflow:hidden}
+
 *,
 * * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
