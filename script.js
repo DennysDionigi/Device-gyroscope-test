@@ -48,3 +48,16 @@ if (window.matchMedia("(pointer: coarse)").matches) {
 
   btn.addEventListener("click", getAccel);
 }
+
+/*sharer*/
+let shareButton = document.querySelector(".share_me"),
+   title = document.title,
+    text = document.querySelector('meta[name="description"]').getAttribute("content"),
+    url = document.location.href;
+shareButton.addEventListener("click", () => {
+  navigator.share && navigator.share({ title: title, text: text, url: url }).then(() => {
+    console.log("Grazie per la condivisione!");
+  }).catch(console.error);
+});
+
+
